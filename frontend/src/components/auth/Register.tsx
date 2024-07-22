@@ -77,12 +77,12 @@ const Register: React.FC = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/users",
+        "http://localhost:9000/users",
         userData
       );
       toast.success("Registration successful! Please verify the email id", {
         position: "top-center",
-        autoClose: 5000,
+        autoClose: 9000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -96,7 +96,7 @@ const Register: React.FC = () => {
     } catch (error) {
       toast.error("Registration failed. Please try again", {
         position: "top-center",
-        autoClose: 5000,
+        autoClose: 9000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,

@@ -149,7 +149,7 @@ const CommentsContainer = ({ blog }: Props) => {
       }
       toast.error("Deleted Comment Successfully!", {
         position: "top-center",
-        autoClose: 5000,
+        autoClose: 9000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,

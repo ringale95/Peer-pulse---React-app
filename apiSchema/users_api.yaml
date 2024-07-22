@@ -3,7 +3,7 @@ info:
   title: User API
   description: This REST API simplifies user management, offering seamless operations to retrieve, create, update, authenticate, and delete user information.
 servers:
-  - url: http://localhost:5000
+  - url: http://localhost:9000
 paths:
   /users:
     get:

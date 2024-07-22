@@ -9,8 +9,7 @@ import { useDispatch } from "react-redux";
 import { toast } from "react-toastify";
 
 const PasswordResetForm = () => {
-
-const location = useLocation();
+  const location = useLocation();
 
   const [email, setEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");
@@ -23,18 +22,17 @@ const location = useLocation();
     e.preventDefault();
     // Validate the form data, perform necessary actions, and call onPasswordSubmit
     dispatch(apiCallForPasswordReset(email, newPassword, token));
-    toast.success('Your Password Reset is successful', {
+    toast.success("Your Password Reset is successful", {
       position: "top-right",
-      autoClose: 5000,
+      autoClose: 9000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
       theme: "colored",
-      });
+    });
   };
-
 
   useEffect(() => {
     const searchParams = new URLSearchParams(location.search);
